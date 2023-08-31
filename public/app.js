@@ -90,7 +90,6 @@ async function createRoom() {
     }
   });
   // Listening for remote session description above
-
   // Listen for remote ICE candidates below
   roomRef.collection('calleeCandidates').onSnapshot(snapshot => {
     snapshot.docChanges().forEach(async change => {
